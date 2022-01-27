@@ -8,7 +8,7 @@
 import Foundation
 
 extension String {
-    mutating func insert(string:String,ind:Int) {
+    mutating func insert(string:String, ind:Int) {
         self.insert(contentsOf: string, at:self.index(self.startIndex, offsetBy: ind) )
     }
 }

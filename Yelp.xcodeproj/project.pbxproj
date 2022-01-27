@@ -47,6 +47,8 @@
 		0931057027A1302F0071DF1B /* APIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931056C27A1302F0071DF1B /* APIAction.swift */; };
 		0931057127A1302F0071DF1B /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931056D27A1302F0071DF1B /* APIRouter.swift */; };
 		0931057327A130550071DF1B /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931057227A130550071DF1B /* UIFont+Extension.swift */; };
+		09623B1427A23C9C00D83ADB /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09623B1327A23C9C00D83ADB /* Int+Extension.swift */; };
+		09623B1827A23DB300D83ADB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09623B1727A23DB300D83ADB /* UIImageView+Extension.swift */; };
 		0986B25827A219B400E8ADC8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986B25727A219B400E8ADC8 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,8 @@
 		0931056C27A1302F0071DF1B /* APIAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAction.swift; sourceTree = "<group>"; };
 		0931056D27A1302F0071DF1B /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		0931057227A130550071DF1B /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		09623B1327A23C9C00D83ADB /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		09623B1727A23DB300D83ADB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		0986B25727A219B400E8ADC8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,13 +257,11 @@
 		0931055A27A12B5D0071DF1B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0931055B27A12B720071DF1B /* UIView+Extension.swift */,
-				0931055D27A12BDF0071DF1B /* UIColor+Extension.swift */,
-				0931056127A12D490071DF1B /* UIAppearance+Extension.swift */,
-				0931057227A130550071DF1B /* UIFont+Extension.swift */,
+				09623B1627A23CA300D83ADB /* UIKit */,
+				09623B1527A23C9F00D83ADB /* Foundation */,
 				090148FC27A1CBEC00FBC68A /* Array+Extension.swift */,
-				090148FE27A1CD4900FBC68A /* UIScrollView+Extension.swift */,
 				0986B25727A219B400E8ADC8 /* String+Extension.swift */,
+				09623B1327A23C9C00D83ADB /* Int+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -273,6 +275,26 @@
 				0931056B27A1302F0071DF1B /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		09623B1527A23C9F00D83ADB /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		09623B1627A23CA300D83ADB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0931055B27A12B720071DF1B /* UIView+Extension.swift */,
+				0931055D27A12BDF0071DF1B /* UIColor+Extension.swift */,
+				0931056127A12D490071DF1B /* UIAppearance+Extension.swift */,
+				090148FE27A1CD4900FBC68A /* UIScrollView+Extension.swift */,
+				0931057227A130550071DF1B /* UIFont+Extension.swift */,
+				09623B1727A23DB300D83ADB /* UIImageView+Extension.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,10 +459,12 @@
 				0901490A27A1D2F300FBC68A /* Constant.swift in Sources */,
 				0901491827A208B100FBC68A /* BannerCellViewModel.swift in Sources */,
 				0901490827A1D14400FBC68A /* LoadingFooterView.swift in Sources */,
+				09623B1827A23DB300D83ADB /* UIImageView+Extension.swift in Sources */,
 				0901491127A1ED2100FBC68A /* DetailViewModel.swift in Sources */,
 				0931056027A12C2D0071DF1B /* ListView.swift in Sources */,
 				0931057327A130550071DF1B /* UIFont+Extension.swift in Sources */,
 				090148FD27A1CBEC00FBC68A /* Array+Extension.swift in Sources */,
+				09623B1427A23C9C00D83ADB /* Int+Extension.swift in Sources */,
 				0931052527A12A550071DF1B /* AppDelegate.swift in Sources */,
 				090148EC27A1AC9B00FBC68A /* BusinessCollectionViewCell.swift in Sources */,
 				0931057127A1302F0071DF1B /* APIRouter.swift in Sources */,

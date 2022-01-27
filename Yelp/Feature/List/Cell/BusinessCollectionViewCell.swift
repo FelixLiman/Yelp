@@ -32,10 +32,7 @@ class BusinessCollectionViewCell: UICollectionViewCell {
     }
 
     public func setData(business: BusinessCellViewModel?) {
-        if let urlString = business?.business.imageUrl, let url = URL(string: urlString) {
-            let imageResource = ImageResource(downloadURL: url, cacheKey: nil)
-            photoImg.kf.setImage(with: imageResource)
-        }
+        photoImg.setImage(string: business?.business.imageUrl)
         nameLbl.text = business?.business.name?.uppercased()
         ratingLbl.text = "⭐️ \(business?.business.rating ?? 0) (\(business?.business.reviewCount ?? 0) reviews)".uppercased()
         dotLbl.text = "·".uppercased()

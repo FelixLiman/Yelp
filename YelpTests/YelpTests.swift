@@ -30,4 +30,22 @@ class YelpTests: XCTestCase {
         }
     }
 
+    func testInsertString() throws {
+        var string = "1500"
+        string.insert(string: ".", ind: 2)
+
+        XCTAssertEqual(string, "15.00", "this is message")
+    }
+
+    func testGetIndexArray() throws {
+        let array = ["A", "B", "C", "D", "E", "F"]
+        
+        XCTAssertEqual(array.get(3), "D", "this is message")
+    }
+
+    func testConvertDayOfWeek() throws {
+        let day = 3
+
+        XCTAssertEqual(day.convertToDayOfWeek(), "Wednesday", "this is message")
+    }
 }

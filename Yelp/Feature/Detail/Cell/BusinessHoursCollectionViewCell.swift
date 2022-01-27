@@ -30,29 +30,13 @@ class BusinessHoursCollectionViewCell: UICollectionViewCell {
     }
 
     public func setData(businessHour: BusinessHourCellViewModel?) {
-        var day = ""
-        switch businessHour?.businessHour.day ?? 0 {
-        case 0:
-            day = "Sunday"
-        case 1:
-            day = "Monday"
-        case 2:
-            day = "Tuesday"
-        case 3:
-            day = "Wednesday"
-        case 4:
-            day = "Thursday"
-        case 5:
-            day = "Friday"
-        case 6:
-            day = "Saturday"
-        default:
-            day = ""
-        }
+        let day = (businessHour?.businessHour.day ?? 0).convertToDayOfWeek()
         dayLbl.text = day.uppercased()
+
         var start = businessHour?.businessHour.start
         start?.insert(string: ".", ind: 2)
         startLbl.text = start?.uppercased()
+        
         var end = businessHour?.businessHour.end
         end?.insert(string: ".", ind: 2)
         endLbl.text = end?.uppercased()

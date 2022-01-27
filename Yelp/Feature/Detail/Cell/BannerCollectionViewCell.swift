@@ -28,10 +28,7 @@ class BannerCollectionViewCell: UICollectionViewCell {
     }
 
     public func setData(photo: BannerCellViewModel?) {
-        if let urlString = photo?.photo, let url = URL(string: urlString) {
-            let imageResource = ImageResource(downloadURL: url, cacheKey: nil)
-            photoImg.kf.setImage(with: imageResource)
-        }
+        photoImg.setImage(string: photo?.photo)
     }
 
     private func setupViews() {
